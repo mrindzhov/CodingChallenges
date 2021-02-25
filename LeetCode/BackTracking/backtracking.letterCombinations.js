@@ -4,7 +4,7 @@
  */
 var letterCombinations = function (digits = '') {
   if (!digits) return [];
-  
+
   const numsMap = {
     2: ['a', 'b', 'c'],
     3: ['d', 'e', 'f'],
@@ -17,20 +17,18 @@ var letterCombinations = function (digits = '') {
   };
   const combinations = [];
 
-  backtrack('', digits);
+  backtrack(digits, '');
   return combinations;
 
-  function backtrack(combinationStr, digitsLeft) {
+  function backtrack(digitsLeft, combinationStr) {
     if (digitsLeft.length === 0) {
       combinations.push(combinationStr);
       return;
     }
     const letters = numsMap[digitsLeft.charAt(0)];
 
-    for (let i = 0; i < letters.length; i++) {
-      const letter = letters[i];
-      backtrack(combinationStr + letter, digitsLeft.slice(1));
-    }
+    for (let i = 0; i < letters.length; i++)
+      backtrack(digitsLeft.slice(1), combinationStr + letters[i]);
   }
 };
 console.log(letterCombinations('23'));
