@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCode.Design;
+using System;
 
 namespace CodingChallenges
 {
@@ -6,7 +7,7 @@ namespace CodingChallenges
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new Executor().Execute();
         }
     }
 }
