@@ -4,9 +4,7 @@
  * @return {number[]}
  */
 var searchRange = function (nums, target) {
-  let foundIdx = binarySearchIt(nums, target);
-  console.log(foundIdx);
-  if (nums[0] === target) foundIdx = 0;
+  let foundIdx = nums[0] === target ? 0 : binarySearchIt(nums, target);
 
   if (foundIdx === -1) return [-1, -1];
 
