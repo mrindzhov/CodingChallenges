@@ -1,18 +1,10 @@
-﻿using System;
+﻿using LeetCode.TreesAndGraphs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace LeetCode.Design
 {
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     *     public int val;
-     *     public TreeNode left;
-     *     public TreeNode right;
-     *     public TreeNode(int x) { val = x; }
-     * }
-     */
     public class Executor
     {
         public void Execute()
@@ -80,14 +72,6 @@ namespace LeetCode.Design
                     right = RecurseTreeNodeQueue(queue)
                 };
         }
-    }
-
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int x) { val = x; }
     }
 
     // Your Codec object will be instantiated and called as such:
