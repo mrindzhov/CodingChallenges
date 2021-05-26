@@ -1,7 +1,7 @@
-﻿using LeetCode.SortingAndSearching;
+﻿using CodingChallenges.LeetCode.TopInterviewQuestions.SortingAndSearching;
 using Xunit;
 
-namespace LeetCode.Tests
+namespace Tests
 {
     public class SearchingAndSortingTests
     {

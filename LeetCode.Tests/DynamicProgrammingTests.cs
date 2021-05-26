@@ -1,7 +1,7 @@
-using LeetCode.DynamicProgramming;
+using CodingChallenges.LeetCode.TopInterviewQuestions.DynamicProgramming;
 using Xunit;
 
-namespace LeetCode.Tests
+namespace Tests
 {
     public class DynamicProgrammingTests
     {

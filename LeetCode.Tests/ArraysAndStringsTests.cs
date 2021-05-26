@@ -1,7 +1,7 @@
-using LeetCode.Arrays;
+using CodingChallenges.LeetCode.TopInterviewQuestions.Arrays;
 using Xunit;
 
-namespace LeetCode.Tests
+namespace Tests
 {
     public class ArraysAndStringsTests
     {

@@ -1,7 +1,7 @@
-﻿using LeetCode.MathProblems;
+﻿using CodingChallenges.LeetCode.TopInterviewQuestions.MathProblems;
 using Xunit;
 
-namespace LeetCode.Tests
+namespace Tests
 {
     public class MathTests
     {
